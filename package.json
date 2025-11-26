@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "gsmarena-api": "^2.0.5"
+  }
+}

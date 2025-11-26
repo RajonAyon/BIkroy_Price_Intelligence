@@ -1,0 +1,13 @@
+# Create this to avoid uploading junk
+venv/
+node_modules/
+__pycache__/
+.env
+.vscode/
+.history/
+*.pyc
+*.log
+
+# Keep only cleaned DB, ignore raw scrapes
+scraper/data/mobiles.db
+scraper/data/failed_urls.txt
