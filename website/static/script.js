@@ -26,7 +26,6 @@ const emptyState = document.getElementById('emptyState');
 fetch('/get_Brands')
     .then(response => response.json())
     .then(data => {
-        console.log('Brands received:', data);
         brandSelect.innerHTML = '<option value="">Select a brand</option>';
         data.forEach(brand => {
             brandSelect.innerHTML += `<option value="${brand}">${brand}</option>`;
@@ -37,7 +36,6 @@ fetch('/get_Brands')
 // When brand selected, get models
 brandSelect.addEventListener('change', function() {
     const brand = this.value;
-    console.log('Brand selected:', brand);
     
     if (!brand) {
         modelSelect.disabled = true;
@@ -48,7 +46,6 @@ brandSelect.addEventListener('change', function() {
     fetch(`/get_Models?Brand=${brand}`)
         .then(response => response.json())
         .then(data => {
-            console.log('Models received:', data);
             modelSelect.disabled = false;
             modelSelect.innerHTML = '<option value="">Select a model</option>';
             data.forEach(model => {
