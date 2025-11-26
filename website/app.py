@@ -18,13 +18,13 @@ import atexit
 from datetime import datetime
 
 # Import local modules
-from utilities import (
+from .utilities import (
     price_intelligence_tool,
     send_alert_email,
     get_db_connection,
     CLEANED_DB_PATH
 )
-from queries import (
+from .queries import (
     GET_BRANDS,
     GET_MODELS,
     INSERT_ALERT,
@@ -38,7 +38,7 @@ from queries import (
     GET_TOP_CAMERAS,
     GET_MARKET_COMPARISON
 )
-from config import (
+from .config import (
     ALERT_CHECK_INTERVAL,
     HIGH_CONFIDENCE_SAMPLES,
     MEDIUM_CONFIDENCE_SAMPLES
