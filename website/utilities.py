@@ -22,8 +22,8 @@ import logging
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 
 # Import configuration
-from config import *
-from queries import GET_PHONE_LISTINGS
+from .config import *
+from .queries import GET_PHONE_LISTINGS
 
 # Setup logging
 logging.basicConfig(
@@ -33,7 +33,7 @@ logging.basicConfig(
 )
 
 # Database path setup
-current_dir = Path.cwd()
+current_dir = Path(__file__).resolve().parent
 project_root = current_dir.parent
 CLEANED_DB_PATH = project_root / 'scraper' / 'data' / 'cleaned_mobiles.db'
 
