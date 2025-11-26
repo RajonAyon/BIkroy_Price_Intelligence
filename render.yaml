@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: bikroy-intelligence
+    name: BIkroy_Price_Intelligence
     env: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "cd website && gunicorn app:app"
