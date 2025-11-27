@@ -2,12 +2,11 @@ import subprocess
 import sys
 from pathlib import Path
 
-# ✅ ADD THIS CHECK
 try:
     import nbformat
     from nbconvert.preprocessors import ExecutePreprocessor
 except ImportError:
-    print("⚠️ Installing nbconvert...")
+    print(" Installing nbconvert...")
     subprocess.run([sys.executable, "-m", "pip", "install", "nbconvert", "nbformat"])
     import nbformat
     from nbconvert.preprocessors import ExecutePreprocessor
@@ -23,7 +22,7 @@ def run_script(script_name):
         print(result.stderr)
         sys.exit(1)
     
-    print(f"✅ {script_name} completed!")
+    print(f" {script_name} completed!")
 
 def run_notebook(notebook_path):
     """Run a Jupyter notebook (.ipynb) programmatically"""
@@ -44,14 +43,14 @@ def run_notebook(notebook_path):
         print(result.stderr)
         sys.exit(1)
     
-    print(f"✅ {notebook_path} completed!")
+    print(f" {notebook_path} completed!")
 
 if __name__ == "__main__":
     try:
         run_script("scraper.py")
         run_notebook(current_dir / "data_handling" / "data_clean.ipynb")
         run_notebook(current_dir / "data_handling" / "prediction.ipynb")
-        print("🎉 Pipeline completed!")
+        print(" Pipeline completed!")
     except Exception as e:
         print(f"❌ Pipeline failed: {e}")
         sys.exit(1)
