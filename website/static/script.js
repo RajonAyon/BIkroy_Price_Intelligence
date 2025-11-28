@@ -121,7 +121,7 @@ function displayResults(data) {
         ${ai_recommendation ? `
         <div class="ai-recommendation-card" style="background: linear-gradient(135deg, ${getRecommendationGradient(ai_recommendation.action)}); 
             border-radius: 15px; padding: 25px; margin: 20px 0; color: white; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-            <h3 style="margin:0 0 15px 0; font-size: 1.2em;">🤖 AI RECOMMENDATION</h3>
+            <h3 style="margin:0 0 15px 0; font-size: 1.2em;">RECOMMENDATION</h3>
             
             <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
                 <div style="font-size: 2.5em;">${ai_recommendation.emoji}</div>
