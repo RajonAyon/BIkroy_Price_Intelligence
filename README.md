@@ -424,7 +424,7 @@ MIT License - Feel free to use for learning or commercial projects.
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Rajon Ahmed Ayon**
 - 🎓 12th Grade Student
 - 📧 Email: rajonayon143@gmail.com
 
