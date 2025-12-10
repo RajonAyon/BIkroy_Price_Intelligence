@@ -1,0 +1,4 @@
+scraper/data/cleaned_mobiles.db filter=lfs diff=lfs merge=lfs -text
+scraper/website/models/X_columns.pkl filter=lfs diff=lfs merge=lfs -text
+scraper/website/models/encoders.pkl filter=lfs diff=lfs merge=lfs -text
+scraper/website/models/xgb_model.pkl filter=lfs diff=lfs merge=lfs -text
