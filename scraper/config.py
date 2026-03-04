@@ -23,7 +23,7 @@ HEADERS = {
 }
 
 # Scraping Parameters
-MAX_PAGES = 300  # Number of pages to scrape
+MAX_PAGES = 500  # Number of pages to scrape
 MAX_CONCURRENT_PAGE_REQUESTS = 15  # Concurrent requests for page scraping
 MAX_CONCURRENT_DETAIL_REQUESTS = 30  # Concurrent requests for detail scraping
 REQUEST_TIMEOUT = 30  # Timeout in seconds
@@ -37,7 +37,7 @@ BANGLA_TO_ENGLISH = str.maketrans("০১২৩৪৫৬৭৮৯", "0123456789"
 # Bangla to English month mapping
 MONTH_MAP = {
     "জানু": "Jan",
-    "ফেব": "Feb",
+    "ফেব্রু": "Feb",
     "মার্চ": "Mar",
     "এপ্রি": "Apr",
     "মে": "May",

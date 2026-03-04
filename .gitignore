@@ -11,3 +11,4 @@ __pycache__/
 # Keep only cleaned DB, ignore raw scrapes
 scraper/data/mobiles.db
 scraper/data/failed_urls.txt
+README.md
